@@ -1,0 +1,45 @@
+.navigation {
+   padding: 20px;
+   border-bottom: 1px solid #000;
+}
+
+.main {
+   background-color: #fff;
+   font-family: "GolosRegular", sans-serif;
+
+   &__content {
+      margin: 100px 0;
+      
+
+      &-text {
+         font-family: "GolosMedium", sans-serif;
+         font-size: 68px;
+         line-height: 1.1;
+         color: #fff;
+         margin-bottom: 50px;
+      }
+
+      &-subtext {
+         color: #FCE9F0;
+         font-size: 18px;
+         font-weight: 400;
+      }
+   }
+   
+   &__circle {
+      border: 1px solid #93E3C6;
+      color: #fff;
+      font-size: 22px;
+      width: 290px;
+      height: 290px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      text-decoration: none;
+      box-sizing: border-box;
+   }
+}
