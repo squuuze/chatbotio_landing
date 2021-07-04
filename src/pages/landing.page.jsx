@@ -2,6 +2,7 @@ import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import { Container, Row, Col } from 'react-bootstrap';
 
+import Navigation from '../components/navigation.component';
 import MainCircleComponent from '../components/mainCircle.component';
 
 const LandingPage = () => {
@@ -33,7 +34,7 @@ const LandingPage = () => {
          background: "#ED4D6C",
          mainColor: "#fff",
          complementryColor: "#fff",
-         mainText: "к новым решениям в бизнесе",
+         mainText: "к новым решениям",
          subText: "Курсы для руководителей, чтобы развивать управленческие навыки и растить бизнес",
       },
       4: {
@@ -71,9 +72,7 @@ const LandingPage = () => {
    return (
       <div className="landing">
          <main className="main" style={{ backgroundColor: screenConfigs[screen].background }}>
-            <nav className="navigation">
-               navigation
-            </nav>
+            <Navigation />
 
             <Container>
                <Row xl={1} md={2}>
