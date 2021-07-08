@@ -87,5 +87,40 @@
       position: relative;
       text-decoration: none;
       box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+      transition: 0.5s linear;
+
+      &-video {
+         position: absolute;
+         width: 290px;
+         height: 290px;
+         border-radius: 50%;
+         z-index: -2;
+      }
+
+      &-text {
+         font-size: 56px;
+         font-weight: 600;
+         color: #82E1C5;
+      }
+
+      &-subtext {
+         color: #82E1C5;
+      } 
+
+      &-arrow {
+         display: none;
+      }
+
+      &:hover {
+         -webkit-transform: scale(1.2);
+         transform: scale(1.2);
+         z-index: 10;
+      }
+
+      &:hover &-arrow {
+         display: block;
+      }
    }
 }

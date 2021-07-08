@@ -22,7 +22,7 @@ const Navigation = () => {
                   </Col>
 
                   <Col className="text-right">
-                     <button className="button__nobg mr-4">Консультация бесплатно</button>
+                     <button className="button__nobg mr-4">Бесплатная консультация</button>
                      <button className="button__nobg">Контакты</button>
                   </Col>
                </Row>
