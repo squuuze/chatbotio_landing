@@ -132,10 +132,10 @@ const LandingPage = () => {
             </Container>
          </main>
       
-         <section className="consultaion">
+         <section className="consultation">
             <Container>
-               <Row>
-                  <Col md={8}>
+               <Row style={{ alignItems: "center" }}>
+                  <Col md={9}>
                      <div className="consultation__content">
                         <div className="consultation__content-header">
                            <h3>Получите консультацию <span>бесплатно</span></h3>
@@ -152,14 +152,19 @@ const LandingPage = () => {
                            <form action="#">
                               <input type="text" placeholder="E-mail" />  
                               <button>Отправить</button> 
-                           </form>   
+                           </form>
+                           
+                           <p className="consultation__content-consent">
+                              Даю согласие на обработку моих персональных данных
+                           </p>
+                           
                         </div>
                      </div>
                   </Col>
 
-                  <Col md={4}>
-                     <div className="consultation__img">
-                        <img src={ConsultationImg} alt="consultation" />
+                  <Col md={3}>
+                     <div className="consultaion__img">
+                        <img src={ConsultationImg} alt="consultaion" />
                      </div>
                   </Col>
                </Row>
