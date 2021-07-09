@@ -11,6 +11,7 @@ import Video3 from '../videos/pro.mp4';
 import Video4 from '../videos/top.mp4';
 
 import ConsultationImg from '../images/consultation.svg';
+import BotSkillItem from '../components/mainBotSkills.component';
 
 const LandingPage = () => {
    const [screen, setScreen] = React.useState(1);
@@ -132,13 +133,13 @@ const LandingPage = () => {
             </Container>
          </main>
       
-         <section className="consultation">
+         <section className="consultation section">
             <Container>
                <Row style={{ alignItems: "center" }}>
                   <Col md={9}>
                      <div className="consultation__content">
-                        <div className="consultation__content-header">
-                           <h3>Получите консультацию <span>бесплатно</span></h3>
+                        <div className="section__header">
+                           <h2>Получите консультацию <span>бесплатно</span></h2>
                         </div>
 
                         <div className="consultation__content-subheader">
@@ -157,7 +158,7 @@ const LandingPage = () => {
                            <p className="consultation__content-consent">
                               Даю согласие на обработку моих персональных данных
                            </p>
-                           
+             
                         </div>
                      </div>
                   </Col>
@@ -167,6 +168,24 @@ const LandingPage = () => {
                         <img src={ConsultationImg} alt="consultaion" />
                      </div>
                   </Col>
+               </Row>
+            </Container>
+         </section>
+      
+         <section className="botskills section">
+            <Container>
+               <div className="section__header">
+                  <h2>Основные актуальные <span>функии ботов</span></h2>
+               </div>
+
+               <Row>
+                  <BotSkillItem />
+                  <BotSkillItem />
+                  <BotSkillItem />
+                  <BotSkillItem />
+                  <BotSkillItem />
+                  <BotSkillItem />
+                  <BotSkillItem />
                </Row>
             </Container>
          </section>

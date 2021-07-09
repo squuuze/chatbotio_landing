@@ -28,6 +28,25 @@
    }
 }
 
+.section {
+   margin: 90px 0;
+
+   &__header {
+      margin-bottom: 40px;
+
+      h2 {
+         font-size: 46px;
+         color: #000;
+         font-weight: 600;
+         margin-bottom: 20px;
+      }
+
+      span {
+         color: #1268FA;
+      }
+   }
+}
+
 .navigation {
    padding: 15px 40px;
    border-bottom: 1px solid #bebebe;
@@ -145,7 +164,8 @@
       &-subheader {
          margin-bottom: 30px;
          p {
-            font-size: 18px;
+            font-size: 22px;
+            color: #000;
          }
       }
 
@@ -182,6 +202,29 @@
          color: #AB9BA4;
          font-size: 18px;
          margin-top: 10px;
+      }
+   }
+}
+
+.botskills {
+   &__item {
+      border-top: 1px solid #CCCCCC;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-content {
+         h4 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #000;
+         }
+
+         p {
+            color: #978797;
+            margin-top: 15px;
+         }
       }
    }
 }
